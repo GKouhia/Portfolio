@@ -19,9 +19,27 @@ h2 { color: red}
 h3 { color: palegreen}
 h4 { color:black}
 
+/* resize images */
+.container img {
+    width: 30%;
+    height: auto;
+}
+
+/* learning how to use a Box. Note, it's not right yet. Article images 20% after margins and padding. 
+.box {
+        width: 20%;
+        padding: 1em;
+        border: 5px solid gray;
+        margin: 0;
+      } */
 p {
     text-align: center;
 }
+p.left {
+    text-align: left;
+    color: magenta;
+}
+
 #para1 {
     text-align: center;
     color: blue;
