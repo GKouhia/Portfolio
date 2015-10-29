@@ -1,0 +1,52 @@
+header img {
+  width: 40%;
+}
+/* more specific takes precedence*/
+nav a {
+  text-decoration: line-through;
+}
+a {
+  text-decoration: none;
+}
+/* more recent takes precedence */
+p { color: yellowgreen; }
+p { color: aqua}
+p { color: bisque}
+p { color: orange; }
+
+h1 { color: aqua}
+h2 { color: red}
+h3 { color: palegreen}
+h4 { color:black}
+
+p {
+    text-align: center;
+}
+#para1 {
+    text-align: center;
+    color: blue;
+}
+#para2 {
+    text-align: left;
+    color: brown;
+}
+#para3 {
+    text-align: center;
+    color: blanchedalmond;
+}
+#para4 {
+    text-align: right;
+    color: greenyellow;
+}
+#para5 {
+    text-align: center;
+    color: green;
+}
+#para6 {
+    text-align: left;
+    color: silver;
+}
+#para7 {
+    text-align: right;
+    color: crimson;
+}
