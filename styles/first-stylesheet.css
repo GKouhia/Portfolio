@@ -24,7 +24,10 @@ h4 { color:black}
     width: 30%;
     height: auto;
 }
-
+.addBorder {
+  /* creating addBorder class and specifying Thickness, Style, and Color. Note: only Tufts is of the class and will have the border */
+  border: 1px solid #000000;
+}
 /* learning how to use a Box. Note, it's not right yet. Article images 20% after margins and padding. 
 .box {
         width: 20%;
