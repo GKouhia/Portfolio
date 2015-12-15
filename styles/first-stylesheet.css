@@ -1,5 +1,5 @@
 header img {
-  width: 40%;
+  width: 25%;
 }
 /* more specific takes precedence*/
 nav a {
@@ -19,7 +19,7 @@ h4 { color: black}
 */
 /* resize images */
 .container img {
-    width: 30%;
+    width: 20%;
     height: auto;
 }
 .addBorder {
