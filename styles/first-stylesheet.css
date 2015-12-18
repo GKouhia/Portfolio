@@ -9,7 +9,8 @@ a {
   text-decoration: none;
 }
 /* more recent takes precedence */
-p { color: darkgray; }
+/* ARIA -- changed paragraph text color to increase contrast and thereby make it easier to read.*/
+p { color: black; }
 
 h1, h2, h3, h4 { font-family: 'Slabo 27px', serif; font-weight bold; color: Black}
 /*
