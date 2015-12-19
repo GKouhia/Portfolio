@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>My Pride</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- To use Bootstrap properly, you must take 2 Steps. Step 1 is to include all the Bootstrap CDN links. Step 2 is to include the link to the JQuery library. You can find the JQuery link by searching on Google.
 To use JQuery within your Bootstrap site pages, you must add the link to jquery in the Head before you add bootstrap CDN links. -->
 <!-- <script src="jquery-1.11.3.min.js"></script> -->
@@ -16,13 +17,16 @@ Latest compiled and minified CSS -->
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles/header.css">
+  <!--<link rel="stylesheet" href="styles/header.css"> -->
     </head>
   <!-- if you want to use Bootstrap with javascript then you'll need to include jquery in your head secction.-->
-  <!-- add style element to add style to buttons without creating a separate css -->
+  <!-- See the helper section at www.w3schools.com/bootstrap/bootstrap_ref_css_helpers.asp 
+Also, see helper section for typography at the following url
+www.w3schools.com/bootstrap/bootstrap_typography.asp
+Add style element to add style to buttons without creating a separate css 
   <style>
     .btn:hover {border: 1px solid magenta}
-  </style>
+  </style> -->
   <!-- see the w3schools list of quick styles for Bootstrap.
 www.w3schools.com/bootstrap/bootstrap_ref_css_helpers.asp 
 also
@@ -31,20 +35,23 @@ see <blockquote> and others-->
 </head>
 <body>
   <header>
-    <img src="images/portfolio-logo.jpg" alt="Portfolio Logo">
+    <div class="container">
+  <!--The .img-rounded class adds rounded corners to an image (not available in IE8):-->       
+  
+    <img src="images/portfolio-logo.jpg" class="img-rounded" alt="Portfolio Logo" width="304" height="236" title="Glenn's Portfolio Site Logo">
       <!-- logo, name of site, main nav -->
-    <h1>Box Model Info Sheet</h1>
+  
     <nav>
       <ul class="nav nav-tabs">
-        <li role="presentation"><a href="#">Link1</a>
+        <!--<li role="presentation">--><a class="btn btn-info" href="index.html" >Main</a>
           </li>
-        <li role="presentation"><a href="#">Link2</a>
-          </li>
-        <li role="presentation"><a href="#">Link3</a>
+        <!--<li role="presentation">--><a class="btn btn-info" href="AboutMe.html" >About Me</a>
+        </li>
+        <!--<li role="presentation">--><a class="btn btn-info" href="Power-HTML5-CSS3.html" >Cool Stuff</a>
           </li>
       </ul>
       <!-- Note, the ROLE element is part of ARIA the accessible Rich Internet Application specification, which ensures that web content is more acessible -- For example, screen readers will recognize buttons.
-Alternatively, we might use the button style in Bootstrap to display 3 buttons followed by 1 traditional link.
+Alternatively, we might use the button style in Bootstrap to display 3 buttons followed by 1 traditional link. 
       <ul>
         <a class="btn btn-danger"href="#">Link 1</a>
         <a class="btn btn-info"href="#">Link 2</a>
@@ -58,26 +65,30 @@ Alternatively, we might use the button style in Bootstrap to display 3 buttons f
   </header>
   <!-- Imediately below is a drop in module for a Blockquote. Separate, be sure and see the Responsive Utilities section on the same w3schools page. -->
   <div class="container">
-  <h1>Blockquotes</h1>
-  <p>The blockquote element is used to present content from another source:</p>
+  <h1>The Pride</h1>
+  <p>I am part of a big family, which at times feels like a lion's pride. Collectively, the people in my family, past and present, make me who I am today.</p>
   <blockquote>
-    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
-    <footer>From WWF's website</footer>
+    <p>Home is where the heart is.</p>
+    <footer> <quote>Anonymous</quote</footer>
   </blockquote>
 </div>
   
   <article>
-    <!-- <h2>How The Box Model Works</h2>
+    <h2>Married</h2>
+      <p>I am a husband and father of two kids. My wife is a native Washingtonian and my best friend in life.</p>
+    <!--<img class="image-scale" src="images/Rainbow.JPG" Alt=Picture of a rainbow>-->
+    <img class="img-rounded" src="images/Rainbow.JPG" Alt=Picture of a rainbow alt="Portfolio Logo" width="304" height="236"  title="Glenn's lives over the rainbow">
+    >
+    <p>My wife and kids inspire me everyday with their kindness and their brilliance.</p>
+    <h2>Next Generation</h2>
+    <img class="img-rounded" src="images/A+A+R.JPG" Alt=2 kids and a dog width="304" height="236"  title="These kids are cute, even from behind">
+    <!--<img class="image-scale" src="images/A+A+R.JPG" Alt=2 kids and a dog>-->
+    <p>My kids are ages 17 and 12. Our kids are happy, smart, fun-loving and, for the most part, reasonably well-adjusted young people.</p>
+    <!--src="http://t.cbsimg.net/i/tr/gallery/Melonfire/css_image100001.gif" class="image-responsive center-block" -->
     
-     <figure>
-       <!-- add image-responsive-center-block to the figure image -->
-      <!-- <img  src="http://t.cbsimg.net/i/tr/gallery/Melonfire/css_image100001.gif" class="image-responsive center-block">
-      <figcaption>The CSS Box Model</figcaption>
-    </figure>
-    
-    <p>All HTML elements can be considered as boxes. The box model wraps around the element and consists of the margin, border, padding, and content itself.</p>
+    <!--<p>All HTML elements can be considered as boxes. The box model wraps around the element and consists of the margin, border, padding, and content itself.</p>
   
-    <p>The box model allows us to add a border around elements, and control the space between them. </p> -->
+    <p>The box model allows us to add a border around elements, and control the space between them. </p> 
 
     <p>Example of styling with the box model:</p>
     <pre>
@@ -95,25 +106,25 @@ Alternatively, we might use the button style in Bootstrap to display 3 buttons f
         <li><em>Padding</em> - Clears an area around the content. The padding is transparent.</li>
         <li><em>Border</em> - A border that goes around the padding and content.</li>
         <li><em>Margin</em> - Clears an area outside the border. The margin is transparent.</li>
-      </ol>
+      </ol>-->
 
   </article>
   
   <aside>
     <h2>About Glenn</h2>
       <p>As an author, Glenn writes on different topics that interest him.</p>
-      <a href="AboutMe.html" target="_blank">About Me</a>
+      <a href="AboutMe.html" target="_blank">About</a>
     <p></p>
     
-    <h2>Portfolio Home Page</h2>
+    <h2>Main Portfolio Page</h2>
       <p>Read more of Glenn's work at:</p>
-      <a href="index.html" target="_blank">Portfolio</a>
+      <a href="index.html" target="_blank">Main</a>
     <p></p>
 
-    <h2>See HTML5 + CSS3 Animate</h2>
+    <h2>Cool Stuff: HTML5+CSS3 animation</h2>
       <p>Take a look at how animations can be rendered natively in a current, standards compliant browser.</p>
       <p></p>
-      <a href="Power-HTML5-CSS3.html">See HTML5 + CSS3 in action</a>
+      <a href="Power-HTML5-CSS3.html">Cool Stuff</a>
     <p></p>
     <!-- <h3>CSS Tip</h3>
     <p>When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add the padding, borders and margins.</p> -->
@@ -123,12 +134,13 @@ Alternatively, we might use the button style in Bootstrap to display 3 buttons f
     <!-- copyright, secondary nav, contact -->
       <p>&copy; 2015 Glenn the Responsive Guy</p>
         <a href="mailto: responsiveguy@glenncompany.com">
-        Contact me at responsiveguy@glenncompany.com
+        Contact Glenn at responsiveguy@glenncompany.com
         </a>
-   <!-- <p>&copy; 2015 Glenn the Responsive Guy</p>
+      <!--<P>Source: <a class="btn btn-default" href="http://www.w3schools.com/css/css_boxmodel.asp">W3Schools</a>.-->       </P>
+   <!--<p>&copy; 2015 Glenn the Responsive Guy</p>
         <a href="mailto: responsiveguy@glenncompany.com">
         Contact me at responsiveguy@glenncompany.com
-        </a>
+        </a> 
     <p>Source: 
       <a class="btn btn-default" href="http://www.w3schools.com/css/css_boxmodel.asp" role="button">Link to W3Schools</a>
       <button class="btn btn-info" type="submit">Button</button>
@@ -137,7 +149,7 @@ Alternatively, we might use the button style in Bootstrap to display 3 buttons f
       <a class="btn btn-warning" href="http://www.w3schools.com/css/css_boxmodel.asp" role="button">Warning</a>
       <a class="btn btn-danger" href="http://www.w3schools.com/css/css_boxmodel.asp" role="button">Danger</a>
       <a class="btn btn-info" href="http://www.w3schools.com/css/css_boxmodel.asp" role="button">Info</a>
-    </p>       -->
+    </p> -->
     
     <!-- commenting out the working code below
     <p>Source: <a href="http://www.w3schools.com/css/css_boxmodel.asp">
